@@ -26,9 +26,11 @@ const Modal = ({ visitor, onBackdropClick }: ModalProps) => {
         <div className={styles.modalFooter}>
           <p className={styles.modalFooterText}>More Contact Details</p>
           <div className={styles.modalFooterBtnContainer}>
-            <button className={`${styles.modalFooterBtn} ${styles.emailBtn}`}>
+            <a
+              href={`mailto:${visitor.email}`}
+              className={`${styles.modalFooterBtn} ${styles.emailBtn}`}>
               Email
-            </button>
+            </a>
             <button className={styles.modalFooterBtn}>Phone</button>
           </div>
         </div>
