@@ -13,8 +13,8 @@ const Header = () => {
       </div>
       <div className={styles.adminUser}>
         <div className={styles.adminDetails}>
-          <p>John Doe</p>
-          <p>Admin</p>
+          <p style={{ color: "grey" }}>John Doe</p>
+          <p style={{ fontWeight: "lighter" }}>Admin</p>
         </div>
         <div className={styles.avatarContainer}>
           <img
