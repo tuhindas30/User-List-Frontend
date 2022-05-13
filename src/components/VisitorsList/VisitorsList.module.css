@@ -1,0 +1,87 @@
+.section {
+  max-width: 100%;
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.listHeading {
+  color: grey;
+  font-weight: 400;
+}
+
+.listHeaderBtn {
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: #7367f0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.message {
+  text-align: center;
+  padding: 1rem;
+}
+
+.tableContainer {
+  overflow: auto;
+  height: calc(100vh - 30rem);
+}
+
+.visitorTable {
+  width: 100%;
+}
+
+.visitorTable thead {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.tableRow {
+  text-align: center;
+  padding: 1rem;
+}
+
+.tableRow:nth-child(1),
+.tableRow:nth-child(2) {
+  min-width: 15rem;
+}
+
+.tableRow:nth-child(3) {
+  min-width: 10rem;
+}
+
+.tableRow:nth-child(4) {
+  min-width: 5rem;
+}
+
+.statusPill {
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+}
+
+.visibilityIcon {
+  fill: grey;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .section {
+    max-width: 60%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tableContainer {
+    height: calc(100vh - 10rem);
+  }
+}
