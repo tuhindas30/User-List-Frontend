@@ -1,10 +1,10 @@
-import { useRef, useState } from "react";
+import { lazy, Suspense, useRef, useState } from "react";
 import VisitorTable from "./VisitorTable";
-import Modal from "../Modal";
 import useFetch from "../../hooks/useFetch";
 import useInfiniteScroll from "../../hooks/useInfiniteScroll";
 import { Visitor as IVisitor } from "../../types/visitor.types";
 import styles from "./VisitorsList.module.css";
+const Modal = lazy(() => import("../Modal"));
 
 const VisitorsList = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -58,7 +58,9 @@ const VisitorsList = () => {
         )}
       </div>
       {isModalOpen && modalData && (
-        <Modal visitor={modalData} onBackdropClick={handleModalClose} />
+        <Suspense fallback={<></>}>
+          <Modal visitor={modalData} onBackdropClick={handleModalClose} />
+        </Suspense>
       )}
     </section>
   );
