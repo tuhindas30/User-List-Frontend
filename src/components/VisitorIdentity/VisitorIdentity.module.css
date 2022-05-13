@@ -1,0 +1,28 @@
+.visitorIdentityContainer {
+  display: flex;
+  align-items: center;
+}
+
+.visitorAvatar {
+  max-width: 20%;
+  border-radius: 100%;
+}
+
+.visitorName {
+  cursor: pointer;
+}
+
+.visitorName,
+.visitorUsername {
+  padding-left: 1rem;
+  color: #7367f0;
+  font-weight: bold;
+}
+
+.visitorUsername {
+  padding-left: 1rem;
+  color: grey;
+  font-weight: lighter;
+  text-transform: lowercase;
+  font-size: 0.9rem;
+}
