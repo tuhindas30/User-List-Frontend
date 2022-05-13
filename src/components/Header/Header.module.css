@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.brandLogoImg {
+  max-width: 3rem;
+}
+
+.inputContainer {
+  position: relative;
+  width: 50%;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  color: grey;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.searchIcon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  fill: grey;
+}
+
+.adminUser {
+  display: flex;
+  align-items: center;
+}
+
+.adminDetails {
+  display: none;
+}
+
+.adminAvatarImg {
+  max-width: 2rem;
+  border-radius: 100%;
+}
+
+.avatarContainer {
+  position: relative;
+}
+
+.onlineBadge {
+  position: absolute;
+  bottom: 0;
+  right: -0.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: green;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+@media screen and (min-width: 600px) {
+  .adminDetails {
+    display: block;
+    padding-right: 1rem;
+  }
+}
