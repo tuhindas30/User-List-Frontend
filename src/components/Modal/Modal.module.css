@@ -1,0 +1,101 @@
+.backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  max-width: 80%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.modalHeading {
+  padding: 1rem;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+}
+
+.visitorDetails {
+  display: flex;
+  align-items: center;
+}
+
+.visitorAvatar {
+  max-width: 20%;
+  border-radius: 100%;
+}
+
+.visitorName,
+.visitorUsername {
+  padding-left: 0.5rem;
+  color: #7367f0;
+  font-weight: bold;
+}
+
+.visitorUsername {
+  padding-left: 0.5rem;
+  color: grey;
+  font-weight: lighter;
+  text-transform: lowercase;
+  font-size: 0.9rem;
+}
+
+.modalBody {
+  padding: 1rem;
+  color: grey;
+}
+
+.modalFooter {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.modalFooterText {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.modalFooterBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2rem;
+}
+
+.modalFooterBtn {
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: #7367f0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modalFooterBtn:nth-child(1) {
+  margin-right: 2rem;
+}
+
+.emailBtn {
+  background-color: #00cfe8;
+}
+
+@media screen and (min-width: 900px) {
+  .modal {
+    max-width: 40%;
+  }
+}
