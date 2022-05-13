@@ -15,7 +15,7 @@ This project was created as an assignment for Refyne.
 
 - User statuses that doesn't match the required condition shows `Unknown`.
 - Since there is not close button on modal, it closes if user clicks outside the modal.
-- Username is concatenated of first name and last name in lower case.
+- Username is concatenation of first name and last name in lower case.
 
 ## Available Scripts
 
